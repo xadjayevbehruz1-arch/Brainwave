@@ -1,0 +1,688 @@
+:root {
+    --primary-blue: #473BF0;
+    --dark-blue: #161C2D;
+    --text-gray: #6B7280;
+    --bg-color: #F4F7FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+header {
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+.signup-btn {
+    background: var(--primary-blue);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+}
+
+.hero-grid {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: var(--text-gray);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Search Box */
+.search-container {
+    background: white;
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.search-container input, .search-container select {
+    border: none;
+    padding: 15px;
+    outline: none;
+    flex: 1;
+}
+
+.search-btn {
+    background: var(--dark-blue);
+    color: white;
+    border: none;
+    padding: 0 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.trending {
+    font-size: 13px;
+    margin-top: 15px !important;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Companies */
+.companies {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.companies h3 {
+    font-size: 18px;
+    color: var(--dark-blue);
+    margin-bottom: 30px;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0.6;
+    font-weight: bold;
+}
+/* Bo'lim foni to'q ko'k */
+.categories-section {
+    background-color: #161C2D; /* Dizayndagi to'q ko'k */
+    padding: 100px 0;
+    color: white;
+}
+
+/* Sarlavha qismi */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.header-left h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.header-left p {
+    color: #94A3B8;
+    max-width: 400px;
+}
+
+.explore-link {
+    color: #68D391; /* Yashilroq rang */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Grid tuzilishi */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 ta teng ustun */
+    gap: 20px;
+}
+
+/* Kartochka dizayni */
+.category-card {
+    background-color: #F4F7FA; /* Kartochkalarning och foni */
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.category-card h3 {
+    color: #161C2D;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.category-card span {
+    color: #94A3B8;
+    font-size: 14px;
+}
+
+/* Faol (ko'k) kartochka stili */
+.category-card.active {
+    background-color: #3B82F6; /* Yorqin ko'k */
+}
+
+.category-card.active h3, 
+.category-card.active span {
+    color: white;
+}
+
+.arrow-icon {
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Hover effekti */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.steps-section {
+    padding: 100px 0;
+    background-color: #FEF9F0; /* Och sarg'ish fon */
+}
+
+.steps-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.steps-header h2 {
+    font-size: 36px;
+    color: #161C2D;
+    margin-bottom: 15px;
+}
+
+.steps-header p {
+    color: #6B7280;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.steps-grid {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Rasm qismi */
+.steps-image-side {
+    flex: 1;
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.main-img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Floating Notification (Ko'k karta) */
+.floating-notification {
+    position: absolute;
+    bottom: 40px;
+    left: -30px;
+    background: #161C2D;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    min-width: 280px;
+}
+
+.icon-bell {
+    background: #68D391;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notif-title {
+    font-size: 12px;
+    color: #68D391;
+    margin: 0;
+}
+
+.notif-desc {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Ro'yxat qismi */
+.steps-list {
+    flex: 1;
+}
+
+.step-item {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.step-number {
+    background: #3B82F6;
+    color: white;
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.step-content h3 {
+    font-size: 20px;
+    color: #161C2D;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    color: #6B7280;
+    line-height: 1.6;
+}
+
+.featured-jobs {
+    padding: 80px 0;
+    background-color: #FEF9F0;
+}
+
+.jobs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.header-text h2 {
+    font-size: 32px;
+    color: #161C2D;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    color: #6B7280;
+}
+
+.arrow-btn {
+    background: none;
+    border: 1px solid #E5E7EB;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.arrow-btn:hover {
+    background-color: #161C2D;
+    color: white;
+}
+
+/* Kartochkalar gridi */
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.job-card {
+    background: transparent;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.job-type {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Ish turlari ranglari */
+.full-time { color: #3B82F6; }
+.remote { color: #10B981; }
+.part-time { color: #F59E0B; }
+
+.job-title {
+    font-size: 18px;
+    color: #161C2D;
+    margin-bottom: 8px;
+}
+
+.job-location {
+    color: #6B7280;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Kompaniya qismi */
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comp-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.blue { background-color: #3B82F6; }
+.orange { background-color: #F97316; }
+.dark-blue { background-color: #1E293B; }
+.green { background-color: #10B981; }
+
+.comp-name {
+    font-weight: 600;
+    color: #161C2D;
+    font-size: 14px;
+}
+
+.news-section {
+    padding: 100px 0;
+    background-color: #FEF9F0; /* Cream foni */
+    text-align: center;
+}
+
+.news-header {
+    margin-bottom: 60px;
+}
+
+.news-header h2 {
+    font-size: 36px;
+    color: #161C2D;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.news-header p {
+    color: #6B7280;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Grid tuzilishi */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Kartochka dizayni */
+.news-card {
+    text-align: left; /* Matnlar chapdan boshlanadi */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.news-card:hover {
+    transform: translateY(-10px); /* Hover bo'lganda yuqoriga ko'tariladi */
+}
+
+.news-image {
+    width: 100%;
+    height: 300px; /* Rasm balandligi */
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Rasm buzilmasdan joylashadi */
+}
+
+/* Matnlar qismi */
+.category {
+    font-size: 14px;
+    color: #94A3B8;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 20px;
+    color: #161C2D;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.cta-section {
+    padding: 80px 0;
+    background-color: #FEF9F0; /* Umumiy fon bilan bir xil */
+    text-align: center;
+}
+
+.cta-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Yashil aylana ikonka */
+.mail-icon {
+    background-color: #68D391; /* Dizayndagi yashil */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    color: #161C2D;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta-desc {
+    color: #6B7280;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Input va Tugma joylashuvi */
+.subscribe-form {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    border: none;
+    padding: 12px 20px;
+    outline: none;
+    font-size: 16px;
+    color: #161C2D;
+}
+
+.subscribe-btn {
+    background-color: #473BF0; /* Dizayndagi ko'k */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #362fd9;
+}
+
+/* Pastki eslatma matni */
+.privacy-note {
+    font-size: 14px;
+    color: #94A3B8;
+    line-height: 1.5;
+}
+
+.privacy-note a {
+    color: #473BF0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-footer {
+    background-color: #161C2D; /* To'q ko'k fon */
+    padding: 80px 0;
+    color: white;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; /* Birinchi ustun kengroq */
+    gap: 40px;
+}
+
+/* Brand qismi */
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-brand p {
+    color: #94A3B8;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #94A3B8;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+/* Linklar ustunlari */
+.footer-links h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #94A3B8;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #473BF0; /* Ko'k rang hoverda */
+}
